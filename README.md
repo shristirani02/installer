@@ -168,48 +168,6 @@ root@ubuntu20:~/installer/ansible# docker compose version
 Docker Compose version v2.12.2
 ```
 
-#### Ubuntu 18.04
-```bash
-test@T:~/installer$ ansible --version
-[DEPRECATION WARNING]: Ansible will require Python 3.8 or newer on the controller starting with Ansible 2.12. Current version: 3.6.9 
-(default, Jun 29 2022, 11:45:57) [GCC 8.4.0]. This feature will be removed from ansible-core in version 2.12. Deprecation warnings can be 
-disabled by setting deprecation_warnings=False in ansible.cfg.
-ansible [core 2.11.12]
-  config file = None
-  configured module search path = ['/home/test/.ansible/plugins/modules', '/usr/share/ansible/plugins/modules']
-  ansible python module location = /home/test/.local/lib/python3.6/site-packages/ansible
-  ansible collection location = /home/test/.ansible/collections:/usr/share/ansible/collections
-  executable location = /home/test/.local/bin/ansible
-  python version = 3.6.9 (default, Jun 29 2022, 11:45:57) [GCC 8.4.0]
-  jinja version = 3.0.3
-  libyaml = True
-test@T:~/installer$ python3 -m pip show ansible
-Name: ansible
-Version: 4.10.0
-Summary: Radically simple IT automation
-Home-page: https://ansible.com/
-Author: Ansible, Inc.
-Author-email: info@ansible.com
-License: GPLv3+
-Location: /home/test/.local/lib/python3.6/site-packages
-Requires: ansible-core
-Required-by:
-
-test@T:~/installer/ansible$ docker version
-Client: Docker Engine - Community
- Version:           20.10.21
- API version:       1.41
- Go version:        go1.18.7
- Git commit:        baeda1f
- Built:             Tue Oct 25 18:02:00 2022
- OS/Arch:           linux/amd64
- Context:           default
- Experimental:      true
-Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Get "http://%2Fvar%2Frun%2Fdocker.sock/v1.24/version": dial unix /var/run/docker.sock: connect: permission denied
-test@T:~/installer/ansible$ docker compose version
-Docker Compose version v2.12.2
-
-```
 ## Documentation
 
 [https://docs.sodafoundation.io](https://docs.sodafoundation.io/)
